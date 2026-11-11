@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice">
+  <!-- Временный атмосферный визуал: горы Алтая. Позже заменить на портрет. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F2EC"/>
+      <stop offset="0.55" stop-color="#E4E8E2"/>
+      <stop offset="1" stop-color="#C8D5CF"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F4A52"/>
+      <stop offset="1" stop-color="#263B43"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#sky)"/>
+  <circle cx="400" cy="300" r="70" fill="#B69A79" opacity="0.35"/>
+  <path d="M0 430 L70 380 L130 405 L210 330 L280 390 L350 340 L420 385 L500 320 L600 380 L600 750 L0 750 Z" fill="#C8D5CF"/>
+  <path d="M0 480 L90 420 L150 450 L240 380 L320 455 L390 410 L470 460 L540 420 L600 445 L600 750 L0 750 Z" fill="#A9BCBA"/>
+  <path d="M0 540 L60 510 L150 470 L230 520 L300 480 L380 530 L460 490 L600 545 L600 750 L0 750 Z" fill="#7D9699"/>
+  <path d="M0 610 L100 560 L200 600 L290 565 L400 620 L500 585 L600 615 L600 750 L0 750 Z" fill="#4F6A70"/>
+  <path d="M0 680 L120 640 L240 670 L360 635 L480 675 L600 650 L600 750 L0 750 Z" fill="url(#near)"/>
+</svg>

@@ -3,13 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Марина Вильданова — коуч и тренер по нейроинтеграции</title>
-  <meta name="description" content="Коучинг для тех, кто ищет свой следующий шаг. Бизнес и личные запросы, онлайн. Первая встреча бесплатно.">
+  <title>Марина Вильданова — коучинг для жизни и бизнеса</title>
+  <meta name="description" content="Коучинг для тех, кто ищет свой следующий шаг. Личные и рабочие запросы, онлайн из любой точки мира. Первая встреча — бесплатно.">
+
+  <!-- Как сайт выглядит при отправке ссылки в мессенджере -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Марина Вильданова — коучинг для жизни и бизнеса">
+  <meta property="og:description" content="Для тех, кто ищет свой следующий шаг и хочет услышать себя. Первая встреча — бесплатно.">
+  <meta property="og:locale" content="ru_RU">
+
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Марина Вильданова",
+    "jobTitle": "Коуч и тренер по нейроинтеграции",
+    "sameAs": [
+      "https://t.me/vildanova_thoughts",
+      "https://www.linkedin.com/in/marina-vildanova/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -23,12 +43,13 @@
       </button>
 
       <nav class="nav" id="nav">
-        <a href="#about">Обо мне</a>
-        <a href="#topics">С чем работаю</a>
+        <a href="#requests">С чем прийти</a>
+        <a href="#formats">Форматы</a>
         <a href="#approach">Подход</a>
+        <a href="#about">Обо мне</a>
         <a href="#experience">Опыт</a>
-        <a href="#prices">Форматы и цены</a>
-        <a href="#contacts" class="nav__cta">Записаться</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contacts" class="nav__cta">Написать мне</a>
       </nav>
     </div>
   </header>
@@ -42,110 +63,197 @@
           <p class="eyebrow">Коуч и тренер по нейроинтеграции</p>
           <h1>Марина Вильданова</h1>
           <p class="hero__lead">
-            Коучинг для тех, кто ищет свой следующий шаг. Для тех, кто хочет услышать себя,
-            но не готов слушать очередного гуру.
+            Коучинг для жизни и бизнеса. Для тех, кто ищет свой следующий шаг
+            и хочет услышать себя, а не очередного гуру.
           </p>
           <div class="hero__buttons">
-            <a href="#contacts" class="btn btn--primary">Бесплатная первая встреча</a>
-            <a href="#prices" class="btn btn--ghost">Форматы и стоимость</a>
+            <a href="#meeting" class="btn btn--primary">Первая встреча — бесплатно</a>
+            <a href="#approach" class="btn btn--ghost">Как я работаю</a>
           </div>
           <ul class="hero__facts">
             <li><strong>25 лет</strong> в международном бизнесе</li>
-            <li><strong>ICF</strong> Level 2</li>
+            <li><strong>Коучинг</strong> по стандартам ICF</li>
             <li><strong>Онлайн</strong> из любой точки мира</li>
           </ul>
         </div>
-        <div class="hero__photo">
-          <!-- Замените файл на настоящее фото: images/hero.jpg -->
-          <img src="images/photo-placeholder.svg" alt="Марина Вильданова" width="600" height="750">
+        <div class="hero__visual">
+          <!-- Временный визуал. Когда будет фотосессия: images/hero.jpg (вертикальное фото 4:5) -->
+          <img src="images/mountains.svg" alt="" width="600" height="750">
         </div>
       </div>
     </section>
 
-    <!-- ============ 2. ХУК / ЦИТАТА ============ -->
+    <!-- ============ 2. ХУК: СИТУАЦИИ, В КОТОРЫХ УЗНАЮТ СЕБЯ ============ -->
     <section class="hook">
-      <div class="container hook__inner reveal">
-        <p class="hook__pain">
-          Снаружи всё может выглядеть хорошо: работа, статус, планы.
-          А внутри — вопрос «а дальше-то что?» и ощущение, что свой голос
-          давно не слышно за чужими «надо».
-        </p>
-        <blockquote class="hook__quote">
-          Я верю, что каждый человек уже целен. В нём есть и сила, и мудрость, и ответы.
-          Моя задача — не вести и не исправлять, а создать пространство,
-          где можно снова услышать себя.
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- ============ 3. ОБО МНЕ ============ -->
-    <section class="section about" id="about">
-      <div class="container about__inner">
-        <div class="about__photo reveal">
-          <!-- Замените файл на настоящее фото: images/about.jpg -->
-          <img src="images/photo-placeholder.svg" alt="Марина Вильданова" width="600" height="750" loading="lazy">
-        </div>
-        <div class="about__text reveal">
-          <p class="eyebrow">Обо мне</p>
-          <h2>Больше 20 лет помогаю людям расти</h2>
-          <p>
-            Четверть века я работаю в международных компаниях — Pfizer, Johnson&nbsp;&amp;&nbsp;Johnson,
-            EssilorLuxottica. Сейчас я директор по развитию партнёрства. Всё это время рядом со мной
-            были команды и люди, и больше всего мне нравилось создавать условия, в которых они растут.
-            Некоторые из тех, с кем я работала, сегодня — коммерческие директора крупных компаний.
-          </p>
-          <p>
-            В коучинг я пришла за этим же: помогать людям двигаться вперёд. Коучинг — не про то,
-            чтобы «починить» прошлое. Он про будущее: куда вы хотите прийти и какие шаги для этого
-            есть уже сейчас. Коучинг не даёт советов. Он помогает услышать себя.
-          </p>
-          <p>
-            Со мной спокойно. Можно говорить о чём угодно, ошибаться и сомневаться —
-            всё, что мы обсуждаем, остаётся между нами.
-          </p>
-          <a href="about.html" class="link-arrow">Как я пришла в коучинг</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 4. С ЧЕМ Я РАБОТАЮ ============ -->
-    <section class="section section--tinted" id="topics">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow">С чем я работаю</p>
-          <h2>С тем, что важно именно вам</h2>
+          <p class="eyebrow">Возможно, это про вас</p>
+          <h2>Когда пора что-то менять, но непонятно что</h2>
+        </div>
+
+        <ul class="situations">
+          <li class="reveal">Со стороны всё хорошо. А внутри — вопрос «а дальше-то что?»</li>
+          <li class="reveal">Есть цель, но непонятно, как к ней подступиться</li>
+          <li class="reveal">Мыслей много, а до действий дело не доходит</li>
+          <li class="reveal">Важное решение откладывается уже не первый месяц</li>
+          <li class="reveal">Хочется своего дела, но пока непонятно какого</li>
+          <li class="reveal">Свой голос почти не слышно за чужими «надо» и ожиданиями</li>
+        </ul>
+
+        <figure class="hook__quote reveal">
+          <blockquote>
+            Я верю, что каждый человек уже целен. Внутри есть и сила, и мудрость, и ответы.
+            Но под слоем чужих «надо», ожиданий и страхов этот голос становится тихим.
+            Моя задача — не вести и не исправлять, а создать пространство,
+            где можно снять лишнее и снова услышать себя.
+          </blockquote>
+          <figcaption>Марина Вильданова</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 3. С ЧЕМ МОЖНО ПРИЙТИ ============ -->
+    <section class="section" id="requests">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">С чем можно прийти</p>
+          <h2>Работа и жизнь — на равных</h2>
           <p class="section__sub">
-            Работаю со взрослыми людьми, у которых есть реальный запрос — и желание что-то с ним сделать.
-            Это могут быть и рабочие, и личные вопросы. Часто они связаны.
+            Я работаю и с рабочими, и с личными запросами. Часто они связаны:
+            вопрос про карьеру оказывается вопросом про себя, и наоборот.
           </p>
         </div>
 
-        <div class="topics">
-          <article class="topic-card reveal">
-            <h3>Работа и бизнес</h3>
+        <div class="requests">
+          <article class="request-card reveal">
+            <h3>Бизнес и карьера</h3>
             <ul>
-              <li>Понять, какой следующий шаг в карьере</li>
-              <li>Сформулировать цели и стратегию</li>
-              <li>Найти нишу или направление для своего дела</li>
-              <li>Вырасти в роли руководителя</li>
-              <li>Принять решение, которое давно откладывается</li>
+              <li>Следующий карьерный шаг или новая роль</li>
+              <li>Профессиональный переход</li>
+              <li>Рост в роли руководителя</li>
+              <li>Поиск ниши для своего дела</li>
+              <li>Стратегические решения в бизнесе</li>
             </ul>
           </article>
-          <article class="topic-card reveal">
-            <h3>Жизнь и я</h3>
+          <article class="request-card reveal">
+            <h3>Личное</h3>
             <ul>
-              <li>Разобраться, чего я хочу на самом деле</li>
-              <li>Пройти период перемен без ощущения хаоса</li>
-              <li>Вернуть связь с собой и своими желаниями</li>
-              <li>Заметить убеждения, которые мешают двигаться</li>
-              <li>Найти опору и спокойствие внутри</li>
+              <li>Понять, чего я на самом деле хочу</li>
+              <li>Найти направление</li>
+              <li>Принять важное решение</li>
+              <li>Разобраться с приоритетами</li>
+              <li>Лучше понять себя и свои ценности</li>
+            </ul>
+          </article>
+          <article class="request-card reveal">
+            <h3>Цели и движение</h3>
+            <ul>
+              <li>Цель есть, а путь к ней не виден</li>
+              <li>Много размышлений, мало действий</li>
+              <li>Хочется перестать распыляться</li>
+              <li>Нужно определить следующий шаг</li>
             </ul>
           </article>
         </div>
 
-        <p class="topics__who reveal">
-          Ко мне приходят собственники бизнеса, предприниматели, руководители, специалисты
-          и все, кто оказался на пороге перемен.
+        <div class="audience reveal">
+          <p class="audience__title">Ко мне приходят</p>
+          <ul class="chips">
+            <li>Собственники и предприниматели</li>
+            <li>Топ-менеджеры и руководители</li>
+            <li>Специалисты, которые хотят расти</li>
+            <li>Те, кто меняет профессию или сферу</li>
+            <li>Те, кто стоит перед важным выбором</li>
+          </ul>
+          <p class="audience__note">
+            Возраст и должность не важны. Важно другое: желание разобраться в своём запросе
+            и готовность самим принимать решения.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. ФОРМАТЫ И СТОИМОСТЬ ============ -->
+    <!-- Цены: чтобы поменять, исправьте текст в <span class="price"> нужной карточки -->
+    <section class="section section--tinted" id="formats">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Форматы и стоимость</p>
+          <h2>Как можно работать со мной</h2>
+          <p class="section__sub">
+            Все встречи — онлайн, на удобной вам платформе. Индивидуальные обычно раз в неделю.
+            Начинаем всегда с бесплатной установочной встречи.
+          </p>
+        </div>
+
+        <h3 class="formats__group reveal">Индивидуально</h3>
+        <div class="products">
+          <article class="product reveal">
+            <p class="product__meta">60 минут · онлайн</p>
+            <h3>Коучинг</h3>
+            <p>
+              Работаем с вашим запросом — личным или рабочим. Я задаю вопросы, вы находите
+              свои ответы. Советов не будет: в коучинге они не нужны.
+            </p>
+            <span class="price">10&nbsp;000&nbsp;₽ <small>за сессию</small></span>
+          </article>
+          <article class="product reveal">
+            <p class="product__meta">Онлайн</p>
+            <h3>Менторинг</h3>
+            <p>
+              Здесь я уже делюсь опытом: стратегия, управление, запуск продуктов,
+              развитие команд. Всё, чему научили 25 лет в международных компаниях.
+            </p>
+            <span class="price">10&nbsp;000&nbsp;₽ <small>за встречу</small></span>
+          </article>
+          <article class="product reveal">
+            <p class="product__meta">Онлайн</p>
+            <h3>Стратегическая сессия «Чего я хочу и куда иду»</h3>
+            <p>
+              Чтобы увидеть картину целиком: что для меня действительно важно, куда я двигаюсь
+              и какие решения меня туда приближают.
+            </p>
+            <span class="price">10&nbsp;000&nbsp;₽ <small>за сессию</small></span>
+          </article>
+          <article class="product reveal">
+            <p class="product__meta">Онлайн</p>
+            <h3>Бизнес-сопровождение «В содружестве с мозгом»</h3>
+            <p>
+              Стратегия, поиск и оценка ниши, новые направления, управленческие задачи.
+              Опираюсь на свой бизнес-опыт и на то, что нейронаука знает о том, как мы
+              принимаем решения.
+            </p>
+            <span class="price">10&nbsp;000&nbsp;₽ <small>за встречу</small></span>
+          </article>
+        </div>
+
+        <h3 class="formats__group reveal">В группе</h3>
+        <div class="products products--two">
+          <article class="product reveal">
+            <p class="product__meta">7–8 человек · раз в месяц, по выходным</p>
+            <h3>Коучинговый разбор книг</h3>
+            <p>
+              Не пересказ, а разговор: что эта книга значит лично для вас и что вы заберёте
+              в свою жизнь. Можно прочитать книгу целиком или только саммари —
+              главное, прийти со своими мыслями.
+            </p>
+            <span class="price">1&nbsp;500&nbsp;₽ <small>за час встречи</small></span>
+          </article>
+          <article class="product reveal">
+            <p class="product__meta">3–4 человека</p>
+            <h3>Стратегическая сессия для мини-группы</h3>
+            <p>
+              Для партнёров, небольшой команды или единомышленников. Вместе разбираемся
+              с целями и решениями. Формат подстраиваю под группу.
+            </p>
+            <span class="price price--soft">Стоимость обсуждаем</span>
+          </article>
+        </div>
+
+        <p class="formats__note reveal">
+          Почему сессия длится час: искать ответы на свои вопросы — серьёзная работа, и дольше
+          часа она обычно не идёт. Если час — это тяжело, можно встречаться по 45 минут.
+          <br>Оплата — переводом на карту. Я работаю как самозанятая и выдаю чек.
         </p>
       </div>
     </section>
@@ -157,9 +265,8 @@
           <p class="eyebrow">Мой подход</p>
           <h2>Сначала меняется «кто», потом — «что»</h2>
           <p class="section__sub">
-            Если менять только действия, глубоких изменений не будет. Чтобы что-то изменилось надолго,
-            меняемся мы сами: состояние, ценности, убеждения. А из этого уже меняются окружение,
-            действия и следующие шаги.
+            Если менять только действия, надолго ничего не изменится. Сначала меняется внутреннее:
+            состояние, ценности, убеждения. А уже из этого — окружение, действия и следующие шаги.
           </p>
         </div>
 
@@ -167,57 +274,121 @@
           <div class="principle reveal">
             <span class="principle__num">01</span>
             <h3>Сотрудничество</h3>
-            <p>Мы разговариваем на равных. Я отвечаю за процесс и атмосферу, вы — за свои решения.</p>
+            <p>Мы разговариваем на равных. Я рядом как партнёр, а не как учитель.</p>
           </div>
           <div class="principle reveal">
             <span class="principle__num">02</span>
             <h3>Доверие</h3>
-            <p>Раскрыться можно только там, где безопасно. Всё сказанное на сессии остаётся на сессии.</p>
+            <p>Раскрыться можно только там, где безопасно. Всё сказанное остаётся между нами.</p>
           </div>
           <div class="principle reveal">
             <span class="principle__num">03</span>
             <h3>Открытость</h3>
-            <p>Вы всегда знаете, какие инструменты я использую и зачем: метафорические карты, стратегические техники и другие.</p>
+            <p>Вы всегда знаете, какие инструменты я использую и зачем.</p>
           </div>
           <div class="principle reveal">
             <span class="principle__num">04</span>
             <h3>Безоценочность</h3>
-            <p>Здесь нет правильного и неправильного. Есть ваш взгляд — и он важен.</p>
+            <p>Здесь нет правильного и неправильного. В каждом человеке есть свой гений, и ваш взгляд важен.</p>
           </div>
         </div>
 
-        <div class="formats-diff reveal">
-          <h3>Коучинг, менторинг, консультация — в чём разница</h3>
-          <div class="formats-diff__grid">
-            <div>
+        <div class="roles reveal">
+          <h3>Коучинг, менторинг, консультация: в чём разница</h3>
+          <div class="roles__grid">
+            <div class="role">
               <h4>Коучинг</h4>
-              <p>Я задаю вопросы, вы находите ответы. Советов нет — есть пространство, где их не нужно.</p>
+              <p class="role__who">Я — партнёр</p>
+              <p>Задаю вопросы и держу процесс. Ответы находите вы. Своё мнение говорю, только если вы попросите.</p>
             </div>
-            <div>
+            <div class="role">
               <h4>Менторинг</h4>
-              <p>Делюсь опытом 25 лет в бизнесе: стратегия, управление, запуск продуктов, развитие команд.</p>
+              <p class="role__who">Я — опытный коллега</p>
+              <p>Делюсь тем, что знаю и умею сама: как устроен бизнес, как строить стратегию и вести команды.</p>
             </div>
-            <div>
+            <div class="role">
               <h4>Консультация</h4>
-              <p>Разбираем конкретную бизнес-задачу и ищем решение вместе. Моё мнение — только если вы о нём просите.</p>
+              <p class="role__who">Я — эксперт</p>
+              <p>Разбираем конкретную задачу и вместе ищем решение.</p>
             </div>
+          </div>
+        </div>
+
+        <div class="honest">
+          <div class="honest__col reveal">
+            <h3>Что может дать работа</h3>
+            <ul>
+              <li>Ясность: чего вы на самом деле хотите</li>
+              <li>Новый взгляд на ситуацию</li>
+              <li>Свои ответы и варианты решений</li>
+              <li>Понятные приоритеты и следующий шаг</li>
+              <li>Действия, которые вы выбрали сами</li>
+            </ul>
+          </div>
+          <div class="honest__col honest__col--muted reveal">
+            <h3>Чего я не обещаю</h3>
+            <p>
+              Гарантированного повышения, роста дохода или новой жизни за одну встречу.
+              И я не решу задачу за вас. Я отвечаю за процесс и атмосферу, вы — за свои решения.
+              Именно поэтому то, что вы найдёте, будет по-настоящему вашим.
+            </p>
+            <p class="honest__tools">
+              Иногда на вопрос приходит только «не знаю». Тогда мы исследуем это «не знаю»
+              через метафоры, метафорические карты и другие инструменты.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ 6. ОПЫТ И КВАЛИФИКАЦИЯ ============ -->
+    <!-- ============ 6. ОБО МНЕ ============ -->
+    <section class="section section--tinted" id="about">
+      <div class="container about__inner">
+        <div class="about__text reveal">
+          <p class="eyebrow">Обо мне</p>
+          <h2>Всю жизнь помогаю людям расти</h2>
+          <p>
+            Меня зовут Марина. Больше 25 лет я работаю в международных компаниях —
+            Pfizer, Johnson&nbsp;&amp;&nbsp;Johnson, EssilorLuxottica. Всё это время рядом со мной были
+            команды и люди. И больше всего мне нравилось создавать условия, в которых человек растёт.
+            Некоторые из тех, с кем я работала, сегодня — коммерческие директора крупных компаний.
+          </p>
+          <p>
+            Коучинг для меня — продолжение того же. Он не про то, чтобы «починить» прошлое.
+            Он про будущее: куда вы хотите прийти и какие шаги для этого есть уже сейчас.
+          </p>
+          <p>
+            Со мной спокойно. Здесь можно сомневаться, ошибаться и говорить «не знаю» —
+            это не страшно. И всё, что мы обсуждаем, остаётся между нами.
+          </p>
+          <a href="about.html" class="link-arrow">Как я пришла в коучинг</a>
+        </div>
+
+        <a class="channel reveal" href="https://t.me/vildanova_thoughts" target="_blank" rel="noopener">
+          <span class="channel__label">Telegram-канал</span>
+          <span class="channel__title">О том, как устроены мы с вами</span>
+          <span class="channel__text">
+            Думаю вслух о жизни, людях и о себе. Личный опыт, наблюдения, нейронаука
+            и открытия, которые иногда приходят спустя годы. Без контент-плана,
+            но с любопытством и по-настоящему.
+          </span>
+          <span class="channel__go">Читать канал</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 7. ОПЫТ И КВАЛИФИКАЦИЯ ============ -->
     <section class="section section--dark" id="experience">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow">Опыт и квалификация</p>
+          <p class="eyebrow">Опыт и образование</p>
           <h2>Бизнес изнутри — и коучинг как метод</h2>
         </div>
 
         <div class="stats reveal">
-          <div class="stat"><span class="stat__num">25</span><span class="stat__label">лет в международных компаниях</span></div>
+          <div class="stat"><span class="stat__num">25 лет</span><span class="stat__label">в международных компаниях</span></div>
           <div class="stat"><span class="stat__num">20+ млрд&nbsp;₽</span><span class="stat__label">оборот бизнеса под моим управлением в J&amp;J</span></div>
-          <div class="stat"><span class="stat__num">21</span><span class="stat__label">аптека — сеть, запущенная с нуля</span></div>
+          <div class="stat"><span class="stat__num">21 аптека</span><span class="stat__label">сеть, которую я запустила с нуля</span></div>
           <div class="stat"><span class="stat__num">15+</span><span class="stat__label">корпоративных наград</span></div>
         </div>
 
@@ -230,7 +401,7 @@
                 <span>Институт СМАРТ, проект Сколково</span>
               </li>
               <li>
-                <strong>Коучинг, ICF Level 2</strong>
+                <strong>Коучинг, программа ICF Level 2</strong>
                 <span>Институт СМАРТ, проект Сколково</span>
               </li>
               <li>
@@ -250,10 +421,9 @@
                 <li>Transition Leadership Workshop — Summit Leadership Partners</li>
                 <li>Effective Sales Leadership — Mercuri International</li>
                 <li>Финансы для нефинансовых менеджеров — Mercuri International</li>
-                <li>Продажи на более высоком уровне — Mercuri International</li>
                 <li>Категорийный менеджмент (CatMan) — Mercuri International</li>
                 <li>Unleashing Innovation — Innovation DB</li>
-                <li>Storewars Business Simulation</li>
+                <li>Корпоративные программы по лидерству, стратегии, управлению людьми и коммуникациям</li>
               </ul>
             </details>
           </div>
@@ -269,7 +439,7 @@
               <li>
                 <span class="timeline__year">2007 — 2019</span>
                 <strong>Johnson &amp; Johnson</strong>
-                <span>Национальный менеджер по работе с ключевыми клиентами. Бизнес OTC более 20&nbsp;млрд&nbsp;₽, рост 38% в год, команда из 25 человек и ещё 25 в смежных командах.</span>
+                <span>Национальный менеджер по работе с ключевыми клиентами. Команда из 25 человек и ещё 25 в смежных командах. В 2018 году команда признана лучшей на фармацевтическом рынке по исследованию Mercuri Group.</span>
               </li>
               <li>
                 <span class="timeline__year">2004 — 2007</span>
@@ -298,6 +468,7 @@
                 <li>Johnson &amp; Johnson: Platinum Encore Award — 2018</li>
                 <li>Johnson &amp; Johnson: Collaboration Annual Award — 2016, 2017, 2018</li>
                 <li>Johnson &amp; Johnson: Excellent Award — 2009, 2016</li>
+                <li>Pfizer: за лучшую инновационную идею — 2005</li>
               </ul>
             </details>
           </div>
@@ -305,115 +476,132 @@
       </div>
     </section>
 
-    <!-- ============ 7. ФОРМАТЫ И СТОИМОСТЬ ============ -->
-    <section class="section" id="prices">
+    <!-- ============ 8. УСТАНОВОЧНАЯ ВСТРЕЧА ============ -->
+    <section class="section" id="meeting">
       <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">Форматы и стоимость</p>
-          <h2>Как можно работать со мной</h2>
-          <p class="section__sub">Все встречи проходят онлайн. Обычно — раз в неделю.</p>
-        </div>
-
-        <div class="intro-offer reveal">
-          <div>
-            <h3>Установочная встреча</h3>
-            <p>
-              45 минут, чтобы познакомиться, прояснить ваш запрос и понять, подходит ли вам коучинг.
-              Можно сразу немного поработать — и уже потом решить, идти ли дальше.
+        <div class="meeting reveal">
+          <div class="meeting__main">
+            <p class="eyebrow">Установочная встреча</p>
+            <h2>Первая встреча — бесплатно</h2>
+            <p class="meeting__lead">
+              45 минут, чтобы познакомиться и понять, подходит ли вам коучинг
+              и подхожу ли вам я.
             </p>
+            <ul class="meeting__list">
+              <li>Проясняем ваш запрос: с чем вы пришли и чего хотите</li>
+              <li>Рассказываю, как устроена работа и какой формат вам подойдёт</li>
+              <li>Можно сразу немного поработать, чтобы почувствовать, как это бывает</li>
+            </ul>
+            <p class="meeting__after">Дальше вы спокойно решаете, идти ли в работу. Без уговоров.</p>
+            <a href="#contacts" class="btn btn--light">Записаться</a>
           </div>
-          <div class="intro-offer__price">
-            <span class="price">Бесплатно</span>
-            <a href="#contacts" class="btn btn--primary">Записаться</a>
-          </div>
+
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num">1</span>
+              <div>
+                <h3>Напишите мне</h3>
+                <p>В Telegram, WhatsApp или MAX. Отвечу в течение 24 часов.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">2</span>
+              <div>
+                <h3>Познакомимся</h3>
+                <p>Договоримся о времени и проведём бесплатную встречу онлайн.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">3</span>
+              <div>
+                <h3>Начнём работу</h3>
+                <p>Если решите идти дальше — обычно встречаемся раз в неделю.</p>
+              </div>
+            </li>
+          </ol>
         </div>
 
-        <!-- Цены: чтобы поменять, просто исправьте число в <span class="price"> -->
-        <div class="products">
-          <article class="product reveal">
-            <h3>Индивидуальный коучинг</h3>
-            <p>Работа с вашим запросом в классическом коучинговом формате. Сессия — 60 минут.</p>
-            <span class="price">10&nbsp;000&nbsp;₽ <small>/ сессия</small></span>
-          </article>
-          <article class="product reveal">
-            <h3>Индивидуальный менторинг</h3>
-            <p>Когда нужен не только вопрос, но и опыт: стратегия, управление, команды, запуски.</p>
-            <span class="price">10&nbsp;000&nbsp;₽ <small>/ сессия</small></span>
-          </article>
-          <article class="product reveal">
-            <h3>Стратегическая сессия</h3>
-            <p>«Чего я хочу и куда иду». Одна глубокая встреча, чтобы увидеть картину целиком и наметить путь.</p>
-            <span class="price">10&nbsp;000&nbsp;₽ <small>/ сессия</small></span>
-          </article>
-          <article class="product reveal">
-            <h3>Бизнес-сопровождение</h3>
-            <p>Стратегия, поиск ниши, консультации по бизнесу — с опорой на то, как устроен наш мозг.</p>
-            <span class="price">10&nbsp;000&nbsp;₽ <small>/ сессия</small></span>
-          </article>
-          <article class="product reveal">
-            <h3>Стратсессия для мини-группы</h3>
-            <p>Для 3–4 человек: команды, партнёров или небольшого коллектива, которым нужно договориться о главном.</p>
-            <span class="price">10&nbsp;000&nbsp;₽ <small>/ сессия</small></span>
-          </article>
-          <article class="product reveal">
-            <h3>Коучинговый книжный клуб</h3>
-            <p>Группа 7–8 человек, раз в месяц по выходным. Не пересказ, а разговор: что эта книга значит для вас и что вы заберёте в жизнь.</p>
-            <span class="price">10&nbsp;000&nbsp;₽ <small>/ встреча</small></span>
-          </article>
+        <div class="rules reveal">
+          <h3>Наши договорённости</h3>
+          <div class="rules__grid">
+            <p><strong>Конфиденциальность.</strong> Всё, что звучит на встрече, остаётся между нами.</p>
+            <p><strong>Ответственность.</strong> Я отвечаю за процесс и атмосферу, вы — за решения и результат.</p>
+            <p><strong>Без давления.</strong> Своё мнение я высказываю, только если вы об этом попросите.</p>
+            <p><strong>Честность.</strong> Можно сомневаться, ошибаться и говорить «не знаю» — с этим тоже можно работать.</p>
+          </div>
         </div>
-
-        <p class="prices__note reveal">
-          Оплата — переводом на карту. Работаю как самозанятая и выдаю чек.
-        </p>
       </div>
     </section>
 
-    <!-- ============ 8. КАК НАЧАТЬ ============ -->
-    <section class="section section--tinted" id="start">
-      <div class="container">
+    <!-- ============ 9. ЧАСТЫЕ ВОПРОСЫ ============ -->
+    <section class="section section--tinted" id="faq">
+      <div class="container faq__inner">
         <div class="section__head reveal">
-          <p class="eyebrow">Как начать</p>
-          <h2>Три простых шага</h2>
+          <p class="eyebrow">Частые вопросы</p>
+          <h2>Если сомневаетесь</h2>
         </div>
 
-        <ol class="steps">
-          <li class="step reveal">
-            <span class="step__num">1</span>
-            <h3>Напишите мне</h3>
-            <p>В Telegram, WhatsApp или MAX. Отвечу в течение 24 часов.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__num">2</span>
-            <h3>Познакомимся</h3>
-            <p>Бесплатная установочная встреча на 45 минут — поймём ваш запрос и формат.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__num">3</span>
-            <h3>Начнём работу</h3>
-            <p>Встречаемся онлайн, обычно раз в неделю, на любой удобной платформе.</p>
-          </li>
-        </ol>
-
-        <div class="rules reveal">
-          <h3>Договорённости</h3>
-          <ul>
-            <li><strong>Конфиденциальность.</strong> Всё, что мы обсуждаем, остаётся между нами.</li>
-            <li><strong>Ответственность.</strong> Я отвечаю за процесс, вы — за свои решения и результат. Коуч не решит задачу за вас, но поможет найти решение.</li>
-            <li><strong>Без давления.</strong> Своё мнение я высказываю, только если вы об этом попросите.</li>
-            <li><strong>Честность.</strong> Можно сомневаться, ошибаться и говорить «не знаю» — с этим тоже можно работать.</li>
-          </ul>
+        <div class="faq reveal">
+          <details>
+            <summary>Чем коучинг отличается от работы с психологом?</summary>
+            <p>
+              Психолог чаще работает с прошлым и с тем, что болит. Коучинг смотрит вперёд:
+              куда вы хотите прийти и какие шаги к этому уже есть. Если в разговоре станет понятно,
+              что вам сейчас нужнее психолог, я скажу об этом честно.
+            </p>
+          </details>
+          <details>
+            <summary>А чем это отличается от разговора с другом?</summary>
+            <p>
+              Друг сочувствует, советует и смотрит на вашу жизнь через свою. Я не даю советов
+              и не оцениваю. Я задаю вопросы, которые помогают услышать себя, и веду процесс так,
+              чтобы разговор привёл к вашему решению.
+            </p>
+          </details>
+          <details>
+            <summary>Вы скажете мне, что делать?</summary>
+            <p>
+              В коучинге — нет: там ответы ищете вы, а я помогаю их найти. Если нужен совет
+              и опыт со стороны, для этого есть менторинг и консультации. Какой формат вам ближе,
+              можно решить на первой встрече.
+            </p>
+          </details>
+          <details>
+            <summary>Что, если я не знаю, с чем прийти?</summary>
+            <p>
+              Это нормально. Для этого и есть бесплатная установочная встреча. А «не знаю» —
+              тоже материал для работы: его можно исследовать, в том числе через метафоры.
+            </p>
+          </details>
+          <details>
+            <summary>Сколько нужно встреч?</summary>
+            <p>
+              Зависит от запроса. Обычно мы встречаемся раз в неделю: иногда хватает нескольких
+              сессий, иногда работа идёт дольше. Обсудим это на первой встрече.
+            </p>
+          </details>
+          <details>
+            <summary>Как проходят встречи и оплата?</summary>
+            <p>
+              Онлайн, на любой удобной вам платформе, — поэтому работать можно из любой страны.
+              Оплата переводом на карту, я самозанятая и выдаю чек.
+            </p>
+          </details>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ============ 9. КОНТАКТЫ ============ -->
+  <!-- ============ 10. КОНТАКТЫ ============ -->
   <footer class="footer" id="contacts">
     <div class="container">
       <div class="footer__head reveal">
         <h2>Напишите мне</h2>
-        <p>Расскажите в паре слов, с чем хотите поработать, — и договоримся о бесплатной встрече.</p>
+        <p>
+          Пары слов о том, с чем хотите поработать, достаточно. Отвечу в течение 24 часов
+          и предложу время для бесплатной встречи.
+        </p>
       </div>
 
       <div class="contacts reveal">
@@ -425,7 +613,7 @@
           <span class="contact__label">WhatsApp</span>
           <span class="contact__value">+7 911 925-74-99</span>
         </a>
-        <!-- Когда появится ссылка на MAX: замените span на <a class="contact" href="ССЫЛКА"> -->
+        <!-- Когда появится ссылка на MAX: замените span на <a class="contact" href="ССЫЛКА" target="_blank" rel="noopener"> -->
         <span class="contact contact--soon">
           <span class="contact__label">MAX</span>
           <span class="contact__value">скоро</span>
@@ -435,7 +623,7 @@
       <div class="socials reveal">
         <a href="https://t.me/vildanova_thoughts" target="_blank" rel="noopener">
           <strong>Telegram-канал</strong>
-          <span>О том, как устроены мы с вами: личный опыт, наблюдения и нейронаука</span>
+          <span>О том, как устроены мы с вами</span>
         </a>
         <a href="https://www.linkedin.com/in/marina-vildanova/" target="_blank" rel="noopener">
           <strong>LinkedIn</strong>
@@ -444,7 +632,7 @@
       </div>
 
       <div class="footer__bottom">
-        <span>© <span data-year>2026</span> Марина Вильданова</span>
+        <span>© <span data-year>2026</span> Марина Вильданова · коучинг для жизни и бизнеса</span>
         <span>Самозанятая · Работаю онлайн</span>
       </div>
     </div>
