@@ -45,6 +45,31 @@
     el.textContent = new Date().getFullYear();
   });
 
+  // --- Окна «Подробнее» в форматах ---
+  // Кнопка с data-open="id" открывает <dialog id="id">.
+  // Закрывается крестиком, клавишей Esc, кликом по затемнению или по ссылке внутри.
+  document.querySelectorAll('[data-open]').forEach(function (btn) {
+    var dlg = document.getElementById(btn.getAttribute('data-open'));
+    if (!dlg || typeof dlg.showModal !== 'function') return;
+
+    btn.addEventListener('click', function () {
+      dlg.showModal();
+      document.documentElement.style.overflow = 'hidden';
+    });
+  });
+
+  document.querySelectorAll('dialog.dlg').forEach(function (dlg) {
+    dlg.addEventListener('close', function () {
+      document.documentElement.style.overflow = '';
+    });
+    dlg.addEventListener('click', function (e) {
+      if (e.target === dlg) dlg.close(); // клик по затемнению вокруг окна
+    });
+    dlg.querySelectorAll('.dlg__close, a[href^="#"]').forEach(function (el) {
+      el.addEventListener('click', function () { dlg.close(); });
+    });
+  });
+
   // Без IntersectionObserver просто показываем всё
   if (!('IntersectionObserver' in window)) {
     document.documentElement.classList.add('no-js');

@@ -16,7 +16,7 @@
   <link rel="preload" href="fonts/cormorant-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2">
 
   <script type="application/ld+json">
   {
@@ -195,7 +195,8 @@
     </section>
 
     <!-- ============ 4. ФОРМАТЫ И СТОИМОСТЬ ============ -->
-    <!-- Цены: чтобы поменять, исправьте числа в строках <li> внутри <ul class="price-list"> -->
+    <!-- Каждая карточка: лицевая сторона + окно «Подробнее» (<dialog> с тем же номером).
+         Цены меняются в двух местах: на карточке и в её окне. -->
     <section class="section section--tinted section--banded" id="formats">
       <div class="band">
         <div class="container">
@@ -205,98 +206,201 @@
       <div class="container">
         <div class="section__head reveal">
           <p class="section__sub">
-            Онлайн-встречи проходят в Телемосте, в Петербурге можно встретиться вживую.
+            Индивидуальные сессии проходят онлайн, в Телемосте. Вживую в Петербурге — коучинговая прогулка.
             Начинаем всегда с бесплатной установочной встречи.
-            Чем отличаются форматы — <a href="#faq">в разделе «Вопросы»</a>.
           </p>
         </div>
 
-        <h3 class="formats__group reveal">Индивидуально · онлайн</h3>
         <div class="products">
+
+          <!-- 1. Коучинг -->
           <article class="product reveal">
-            <p class="product__meta">Сессия 60 минут</p>
+            <p class="product__tag">Онлайн · 60 минут</p>
             <h3>Коучинг</h3>
-            <p>
-              Работаем с вашим запросом — личным или рабочим. Я задаю вопросы, вы находите
-              свои ответы. Час — оптимальное время: искать ответы — серьёзная работа.
-            </p>
+            <p class="product__lead">Разговор, в котором вы находите свои ответы на личный или рабочий вопрос.</p>
             <ul class="price-list">
               <li><span>1 сессия</span><b>10&nbsp;000&nbsp;₽</b></li>
-              <li><span>3 сессии</span><b>24&nbsp;000&nbsp;₽</b></li>
-              <li><span>5 сессий</span><b>35&nbsp;000&nbsp;₽</b></li>
-              <li><span>10 сессий</span><b>60&nbsp;000&nbsp;₽</b></li>
+              <li><span>5 сессий <em>выгоднее · по 7&nbsp;000&nbsp;₽</em></span><b>35&nbsp;000&nbsp;₽</b></li>
             </ul>
+            <button class="product__more" type="button" data-open="dlg-coaching">Подробнее</button>
           </article>
 
+          <!-- 2. Менторинг -->
           <article class="product reveal">
-            <p class="product__meta">6 сессий · 3 месяца</p>
+            <p class="product__tag">Онлайн · 6 встреч за 3 месяца</p>
             <h3>Менторинг</h3>
-            <p>
-              Здесь я уже делюсь опытом: стратегия, управление, запуск продуктов,
-              развитие команд. Менторинг даёт результат в динамике, поэтому
-              он идёт только пакетом: 6 встреч за 3 месяца.
-            </p>
+            <p class="product__lead">Когда нужен не только вопрос, но и опыт человека, который 25 лет строил бизнес и команды.</p>
             <ul class="price-list">
-              <li><span>Пакет из 6 сессий</span><b>45&nbsp;000&nbsp;₽</b></li>
+              <li><span>6 встреч <em>по 7&nbsp;500&nbsp;₽</em></span><b>45&nbsp;000&nbsp;₽</b></li>
             </ul>
+            <button class="product__more" type="button" data-open="dlg-mentoring">Подробнее</button>
           </article>
 
+          <!-- 3. Стратегическая сессия -->
           <article class="product reveal">
-            <p class="product__meta">Планирование будущего</p>
+            <p class="product__tag">Онлайн · 60 минут</p>
             <h3>Стратегическая сессия «Чего я хочу и куда иду»</h3>
-            <p>
-              Если коучинг — про здесь и сейчас, то стратегическая сессия — про горизонт
-              в 5, 10, 15 лет. Кто я, где я сейчас, куда хочу прийти и что мне для этого доступно.
-            </p>
+            <p class="product__lead">Взгляд на 5, 10, 15 лет вперёд: куда я хочу прийти и с чего начать.</p>
             <ul class="price-list">
               <li><span>1 сессия</span><b>10&nbsp;000&nbsp;₽</b></li>
-              <li><span>3 сессии</span><b>24&nbsp;000&nbsp;₽</b></li>
+              <li><span>3 сессии <em>выгоднее · по 8&nbsp;000&nbsp;₽</em></span><b>24&nbsp;000&nbsp;₽</b></li>
             </ul>
+            <button class="product__more" type="button" data-open="dlg-strategy">Подробнее</button>
           </article>
 
+          <!-- 4. Бизнес-сопровождение -->
           <article class="product reveal">
-            <p class="product__meta">Минимум 3 сессии</p>
+            <p class="product__tag">Онлайн · от 3 сессий</p>
             <h3>Бизнес-сопровождение</h3>
-            <p>
-              Когда есть бизнес-вопрос: перемены в команде, запуск нового направления
-              или продукта, сложный проект. Нужен человек, с которым можно подумать вслух,
-              расставить приоритеты и выбрать стратегию.
-            </p>
+            <p class="product__lead">Для бизнес-задач: перемены в команде, запуск направления или продукта, выбор стратегии.</p>
             <ul class="price-list">
               <li><span>3 сессии</span><b>45&nbsp;000&nbsp;₽</b></li>
             </ul>
+            <button class="product__more" type="button" data-open="dlg-business">Подробнее</button>
           </article>
-        </div>
 
-        <h3 class="formats__group reveal">Вживую в Петербурге и в группе</h3>
-        <div class="products">
+          <!-- 5. Коучинговая прогулка -->
           <article class="product product--accent reveal">
-            <p class="product__meta">Только в Санкт-Петербурге</p>
+            <p class="product__tag product__tag--live">Вживую · Санкт-Петербург</p>
             <h3>Коучинговая прогулка</h3>
-            <p>
-              Тот же индивидуальный коучинг, но в движении. На ходу легче замечать новое
-              и легче его усваивать — мысли идут вместе с шагами.
-            </p>
+            <p class="product__lead">Тот же коучинг, но в движении: на ходу мысли идут легче.</p>
             <ul class="price-list">
               <li><span>1 прогулка</span><b>15&nbsp;000&nbsp;₽</b></li>
-              <li><span>3 прогулки</span><b>30&nbsp;000&nbsp;₽</b></li>
+              <li><span>3 прогулки <em>выгоднее · по 10&nbsp;000&nbsp;₽</em></span><b>30&nbsp;000&nbsp;₽</b></li>
             </ul>
+            <button class="product__more" type="button" data-open="dlg-walk">Подробнее</button>
           </article>
 
+          <!-- 6. Коучинговый разбор книг -->
           <article class="product reveal">
-            <p class="product__meta">7–8 человек · раз в месяц</p>
+            <p class="product__tag">Группа · онлайн · раз в месяц</p>
             <h3>Коучинговый разбор книг</h3>
-            <p>
-              Не пересказ, а разговор: что эта книга значит лично для вас и что вы заберёте
-              в свою жизнь. Можно прочитать книгу целиком или только саммари —
-              главное, прийти со своими мыслями.
-            </p>
+            <p class="product__lead">Читаем одну книгу и разбираем, что она значит лично для вас.</p>
             <ul class="price-list">
-              <li><span>Час встречи</span><b>1&nbsp;500&nbsp;₽</b></li>
+              <li><span>Встреча, 1 час</span><b>1&nbsp;500&nbsp;₽</b></li>
             </ul>
+            <button class="product__more" type="button" data-open="dlg-books">Подробнее</button>
           </article>
+
         </div>
       </div>
+
+      <!-- ===== Окна «Подробнее» ===== -->
+
+      <dialog class="dlg" id="dlg-coaching" aria-labelledby="dlg-coaching-t">
+        <button class="dlg__close" type="button" aria-label="Закрыть">×</button>
+        <p class="product__tag">Онлайн · 60 минут</p>
+        <h3 id="dlg-coaching-t">Коучинг</h3>
+        <h4>Что это</h4>
+        <p>Я задаю вопросы и помогаю держать фокус, а ответы находите вы. Советов я не даю: в коучинге они не нужны.</p>
+        <h4>С чем приходят</h4>
+        <p>Важный выбор, следующий шаг, цель без понятного пути, перемены в жизни или работе.</p>
+        <h4>Как проходит</h4>
+        <p>60 минут в Телемосте, обычно раз в неделю. Если час — это тяжело, можно встречаться по 45 минут.</p>
+        <h4>Чем отличается от менторинга</h4>
+        <p>Здесь я не делюсь своим опытом и не подсказываю. Если нужен совет, вам подойдёт менторинг.</p>
+        <h4>Стоимость</h4>
+        <ul class="price-list">
+          <li><span>1 сессия</span><b>10&nbsp;000&nbsp;₽</b></li>
+          <li><span>3 сессии <em>по 8&nbsp;000&nbsp;₽</em></span><b>24&nbsp;000&nbsp;₽</b></li>
+          <li><span>5 сессий <em>по 7&nbsp;000&nbsp;₽</em></span><b>35&nbsp;000&nbsp;₽</b></li>
+          <li><span>10 сессий <em>по 6&nbsp;000&nbsp;₽</em></span><b>60&nbsp;000&nbsp;₽</b></li>
+        </ul>
+        <a href="#meeting" class="btn btn--primary dlg__cta">Записаться на бесплатную встречу</a>
+      </dialog>
+
+      <dialog class="dlg" id="dlg-mentoring" aria-labelledby="dlg-mentoring-t">
+        <button class="dlg__close" type="button" aria-label="Закрыть">×</button>
+        <p class="product__tag">Онлайн · 6 встреч за 3 месяца</p>
+        <h3 id="dlg-mentoring-t">Менторинг</h3>
+        <h4>Что это</h4>
+        <p>Здесь я делюсь своим опытом: стратегия, управление, запуск продуктов, развитие команд. Можно приходить с конкретными задачами и разбирать их вместе.</p>
+        <h4>Для кого</h4>
+        <p>Руководители, предприниматели и те, кто растёт в новую роль.</p>
+        <h4>Как проходит</h4>
+        <p>6 встреч по 60 минут за 3 месяца, примерно раз в две недели. Между встречами вы пробуете, на встрече разбираем, что получилось.</p>
+        <h4>Почему только пакет</h4>
+        <p>Менторинг работает в динамике: за одну встречу его результат не увидеть.</p>
+        <h4>Чем отличается от коучинга</h4>
+        <p>В коучинге ответы ищете вы, в менторинге я делюсь своими.</p>
+        <h4>Стоимость</h4>
+        <ul class="price-list">
+          <li><span>6 встреч <em>по 7&nbsp;500&nbsp;₽</em></span><b>45&nbsp;000&nbsp;₽</b></li>
+        </ul>
+        <a href="#meeting" class="btn btn--primary dlg__cta">Записаться на бесплатную встречу</a>
+      </dialog>
+
+      <dialog class="dlg" id="dlg-strategy" aria-labelledby="dlg-strategy-t">
+        <button class="dlg__close" type="button" aria-label="Закрыть">×</button>
+        <p class="product__tag">Онлайн · 60 минут</p>
+        <h3 id="dlg-strategy-t">Стратегическая сессия «Чего я хочу и куда иду»</h3>
+        <h4>Что это</h4>
+        <p>Коучинг — про здесь и сейчас. Стратегическая сессия — про большую картину: кто я, где я сейчас, куда хочу прийти и что мне для этого доступно.</p>
+        <h4>Когда подходит</h4>
+        <p>На пороге перемен, после большого этапа или когда «вроде всё есть, а куда дальше — непонятно».</p>
+        <h4>Одна или три</h4>
+        <p>За одну сессию складывается картина и направление. За три — ещё и план, и проверка первых шагов.</p>
+        <h4>Стоимость</h4>
+        <ul class="price-list">
+          <li><span>1 сессия</span><b>10&nbsp;000&nbsp;₽</b></li>
+          <li><span>3 сессии <em>по 8&nbsp;000&nbsp;₽</em></span><b>24&nbsp;000&nbsp;₽</b></li>
+        </ul>
+        <a href="#meeting" class="btn btn--primary dlg__cta">Записаться на бесплатную встречу</a>
+      </dialog>
+
+      <dialog class="dlg" id="dlg-business" aria-labelledby="dlg-business-t">
+        <button class="dlg__close" type="button" aria-label="Закрыть">×</button>
+        <p class="product__tag">Онлайн · от 3 сессий</p>
+        <h3 id="dlg-business-t">Бизнес-сопровождение</h3>
+        <h4>Что это</h4>
+        <p>Когда есть бизнес-вопрос и нужен человек, с которым можно подумать вслух. Помогаю расставить приоритеты, взвесить варианты и выбрать стратегию.</p>
+        <h4>С чем приходят</h4>
+        <p>Изменения в команде, запуск нового направления или продукта, сложный проект, выбор между вариантами развития.</p>
+        <h4>Как проходит</h4>
+        <p>Минимум 3 сессии по 60 минут. Первая — разбор ситуации, на следующих работаем с решениями и проверяем их.</p>
+        <h4>Чем отличается от менторинга</h4>
+        <p>Менторинг — про ваш рост как руководителя. Здесь фокус на конкретной задаче бизнеса.</p>
+        <h4>Стоимость</h4>
+        <ul class="price-list">
+          <li><span>3 сессии</span><b>45&nbsp;000&nbsp;₽</b></li>
+        </ul>
+        <a href="#meeting" class="btn btn--primary dlg__cta">Записаться на бесплатную встречу</a>
+      </dialog>
+
+      <dialog class="dlg" id="dlg-walk" aria-labelledby="dlg-walk-t">
+        <button class="dlg__close" type="button" aria-label="Закрыть">×</button>
+        <p class="product__tag product__tag--live">Вживую · Санкт-Петербург</p>
+        <h3 id="dlg-walk-t">Коучинговая прогулка</h3>
+        <h4>Что это</h4>
+        <p>Индивидуальная коучинговая сессия во время прогулки по Петербургу. В движении проще замечать новое и легче его усваивать.</p>
+        <h4>Кому подходит</h4>
+        <p>Тем, кому сложно говорить «в экран», и тем, кто лучше думает на ходу.</p>
+        <h4>Как проходит</h4>
+        <p>60 минут. Встречаемся в условленном месте и идём по спокойному маршруту, без спешки. Если погода подведёт, прогулку перенесём.</p>
+        <h4>Стоимость</h4>
+        <ul class="price-list">
+          <li><span>1 прогулка</span><b>15&nbsp;000&nbsp;₽</b></li>
+          <li><span>3 прогулки <em>по 10&nbsp;000&nbsp;₽</em></span><b>30&nbsp;000&nbsp;₽</b></li>
+        </ul>
+        <a href="#meeting" class="btn btn--primary dlg__cta">Записаться на бесплатную встречу</a>
+      </dialog>
+
+      <dialog class="dlg" id="dlg-books" aria-labelledby="dlg-books-t">
+        <button class="dlg__close" type="button" aria-label="Закрыть">×</button>
+        <p class="product__tag">Группа · онлайн · раз в месяц</p>
+        <h3 id="dlg-books-t">Коучинговый разбор книг</h3>
+        <h4>Что это</h4>
+        <p>Не пересказ. Мы обсуждаем, какие мысли из книги откликнулись, что они значат лично для вас и как перенести их в жизнь.</p>
+        <h4>Как проходит</h4>
+        <p>Группа 7–8 человек, онлайн, раз в месяц, встреча длится час. Можно прочитать книгу целиком или только саммари.</p>
+        <h4>Почему в группе</h4>
+        <p>Чужой взгляд часто открывает в книге то, чего вы сами не заметили.</p>
+        <h4>Стоимость</h4>
+        <ul class="price-list">
+          <li><span>Встреча, 1 час</span><b>1&nbsp;500&nbsp;₽</b></li>
+        </ul>
+        <a href="#meeting" class="btn btn--primary dlg__cta">Записаться на бесплатную встречу</a>
+      </dialog>
     </section>
 
     <!-- ============ 5. ОБО МНЕ ============ -->
@@ -544,6 +648,6 @@
     <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2l-4.7-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg>
   </a>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
